@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=divice-width, initail-scale=1.0">
+        <title>ZAHRAS'CINEMA</title>
+        <link rel="stylesheet"
+        href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <section>
+                <div>
+                    <h1>
+                        WELCOME TO ZAHRAS'CINEMA
+                    </h1>
+                    <br>
+                    <br>
+                    <section>
+                        <h2 class="about">About The Movie</h2>
+                        <p class="about"Editore : Zahra Amiri  <br>  Action Movie <br> Release on:2020 <p>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="about>" style="background-color: white;"><br> Be brave and do not be afraid
+
+                            </p>
+                    </section>
+                    <br>
+                    <br>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <video controls>
+                     <source src="css/media/trailer1.mp4" type="video/mp4" width="500px" height="300px">
+                    </video>
+                </div>
+            </section>
+            <section>
+                <div >
+           
+                    <button onclick="playAgain()" >💫Play Again💫</button>
+                    <button onclick="rateMovie()" >⭐️ Rate Movie ⭐️</button>
+                    
+                   
+                </section>
+                </div>
+                
+        
+            <script>
+                function playAgain() {
+                    const video = document.getElementById('trailer');
+                    video.currentTime = 0;
+                    video.play();
+                }
+                
+                function rateMovie() {
+                    let rating = prompt("Rate the movie from 1 to 4 stars!");
+                    if (rating) {
+                        alert(Thanks for rating us ${rating} stars!);
+                    }
+                }
+                </script>
+
+
+
+    </body>
+    <footer>
+        <h1 id="footer"> Thanks For Waching </h1>
+    </footer>
+</html>
